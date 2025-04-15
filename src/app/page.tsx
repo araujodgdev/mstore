@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 export default function Home() {
   return (
     <div className="space-y-16">
-      <motion.section 
+      <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -19,14 +19,16 @@ export default function Home() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="relative container mx-auto px-4">
-          <motion.div 
+          <motion.div
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
             className="max-w-xl"
           >
-            <h1 className="text-5xl font-light mb-4">Minimal Elegance</h1>
-            <p className="text-xl mb-8">Discover our curated collection of timeless pieces.</p>
+            <div className='bg-white p-4 font-bold'>
+              <h1 className="text-5xl mb-4">Minimal Elegance</h1>
+              <p className="text-xl mb-8">Discover our curated collection of timeless pieces.</p>
+            </div>
             <Link
               href="/shop"
               className="inline-flex items-center bg-black text-white px-8 py-3 hover:bg-gray-800 transition-all hover:scale-105"
